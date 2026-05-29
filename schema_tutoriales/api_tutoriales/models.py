@@ -3,7 +3,7 @@ from django.db import models
 # modelo de tutoriales
 
 class Tutoriales(models.Model):
-    id:tutoriales =models.AutoField(primary_key=True)
+    id_tutoriales =models.AutoField(primary_key=True)
     titulo = models.CharField(max_length=100)
     descripcion = models.CharField(max_length=200)
     link_tuturial = models.CharField(max_length=200)
