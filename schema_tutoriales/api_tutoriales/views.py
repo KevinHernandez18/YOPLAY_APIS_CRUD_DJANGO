@@ -4,7 +4,7 @@ from rest_framework import viewsets
 
 from .models import Tutoriales
 
-from .serializers import TutorialesSerializer
+from .serializer import TutorialesSerializer
 
 # crud de tutoriales
 

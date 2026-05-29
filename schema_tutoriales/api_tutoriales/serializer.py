@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import (tutoriales)
+from .models import Tutoriales
 
 class TutorialesSerializer(serializers.ModelSerializer):
     class Meta:
-        model = tutoriales
+        model = Tutoriales
         fields = '__all__'
