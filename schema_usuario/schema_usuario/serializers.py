@@ -16,7 +16,7 @@ class UsuarioSerializer(serializers.ModelSerializer):
         model = Usuario
         fields= '__all__'
         
-class ContrasenaSerializer(serializers.NodelSerializer):
+class ContrasenaSerializer(serializers.ModelSerializer):
     class Meta :
         model = Contrasena
         fields = '__all__'

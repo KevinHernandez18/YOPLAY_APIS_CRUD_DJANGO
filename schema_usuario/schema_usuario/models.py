@@ -26,7 +26,7 @@ class Usuario (models.Model):
     email = models.EmailField(unique=True)
     telefono = models.CharField(max_length=22)
     fecha_nacimiento = models.DateField()
-    fecha_registro = models.DatetimeField(auto_now_add=True)
+    fecha_registro = models.DateTimeField(auto_now_add=True)
     activo = models.BooleanField(default=True)
     fecha_creacion = models.DateTimeField(auto_now_add=True)
     fecha_modificacion = models.DateTimeField(auto_now=True)

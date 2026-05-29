@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = 'django-insecure-seizsdx9#co09t@^m_5b$=mu&5p@ockvyx(4!@n_i#b31aq!_^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=True)
@@ -58,6 +58,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # APP para usar el api rest
+    'rest_framework',
+    # APP PARA USAR SWAGGER
+    'drf_yasg',
+    # APP DEL API
+    'schema_usuario',
 ]
 
 MIDDLEWARE = [
@@ -95,14 +101,14 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': config('DB_NAME'),
         'USER':config('DB_USER'),
         'PASSWORD':config('DB_PASSWORD'),
         'HOST':config('DB_HOST'),
         'PORT':config('DB_PORT'),
         'OPTIONS': {
-            'options': f'-c search_path?{config("DB_NAME")}'
+            'options': f'-c search_path={config("DB_SCHEMA")}'
         }
     }
 }
