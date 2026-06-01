@@ -21,3 +21,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('gestion_encuentro/', include('gestion_encuentro.urls')),
 ]
+
