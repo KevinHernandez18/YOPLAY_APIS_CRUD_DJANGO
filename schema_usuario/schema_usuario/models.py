@@ -72,3 +72,4 @@ class HistorialAcceso (models.Model):
     class Meta:
         db_table = "historial_acceso"
     
+    
