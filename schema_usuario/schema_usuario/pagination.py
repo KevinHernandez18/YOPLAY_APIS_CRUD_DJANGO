@@ -10,3 +10,5 @@ class DefaultPageNumberPagination(PageNumberPagination):
         if page_size == '-1':
             return None
         return super().paginate_queryset(queryset, request, view)
+    
+    
