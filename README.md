@@ -23,16 +23,16 @@ Los esquemas tienen paginacion por numero de pagina. Cuando se usa la clase `Def
 - Tamano por defecto: `10` registros.
 - Parametro para cambiar tamano: `page_size`.
 - Tamano maximo: `100` registros.
-- Para traer todos los registros sin paginar, usa `?page_size=all` en el endpoint de lista.
+- Para traer todos los registros sin paginar, usa `?page_size=-1` en el endpoint de lista.
 
 Ejemplos:
 
 ```text
 GET /gestion_encuentro/encuentros/?page_size=3
 GET /gestion_encuentro/encuentros/?page=2&page_size=3
-GET /gestion_encuentro/encuentros/?page_size=all
-GET /api/torneos/?page_size=all
-GET /api/usuario/?page_size=all
+GET /gestion_encuentro/encuentros/?page_size=-1
+GET /api/torneos/?page_size=-1
+GET /api/usuario/?page_size=-1
 ```
 
 ## api_crud_djnago_clase
@@ -77,7 +77,7 @@ Endpoint:
 Para traer todos los registros:
 
 ```text
-/api/Reglas/?page_size=all
+/api/Reglas/?page_size=-1
 ```
 
 #### Tipo_deporte
@@ -103,7 +103,7 @@ Endpoint:
 Para traer todos los registros:
 
 ```text
-/api/Tipo_deporte/?page_size=all
+/api/Tipo_deporte/?page_size=-1
 ```
 
 #### Tipo_distribucion
@@ -129,7 +129,7 @@ Endpoint:
 Para traer todos los registros:
 
 ```text
-/api/Tipo_distribucion/?page_size=all
+/api/Tipo_distribucion/?page_size=-1
 ```
 
 #### Tipo_reglamento
@@ -161,7 +161,7 @@ Endpoint:
 Para traer todos los registros:
 
 ```text
-/api/Tipo_reglamento/?page_size=all
+/api/Tipo_reglamento/?page_size=-1
 ```
 
 ## api_crud_djnago_gestion_deportiva
@@ -208,7 +208,7 @@ Endpoint:
 Para traer todos los registros:
 
 ```text
-/api/equipos/?page_size=all
+/api/equipos/?page_size=-1
 ```
 
 #### Premiacion
@@ -235,7 +235,7 @@ Endpoint:
 Para traer todos los registros:
 
 ```text
-/api/premiaciones/?page_size=all
+/api/premiaciones/?page_size=-1
 ```
 
 #### Torneo
@@ -274,7 +274,7 @@ Endpoint:
 Para traer todos los registros:
 
 ```text
-/api/torneos/?page_size=all
+/api/torneos/?page_size=-1
 ```
 
 #### Imagen
@@ -306,7 +306,7 @@ Endpoint:
 Para traer todos los registros:
 
 ```text
-/api/imagenes/?page_size=all
+/api/imagenes/?page_size=-1
 ```
 
 #### Distribucion
@@ -338,7 +338,7 @@ Endpoint:
 Para traer todos los registros:
 
 ```text
-/api/distribuciones/?page_size=all
+/api/distribuciones/?page_size=-1
 ```
 
 #### Reglamento
@@ -372,7 +372,7 @@ Endpoint:
 Para traer todos los registros:
 
 ```text
-/api/reglamentos/?page_size=all
+/api/reglamentos/?page_size=-1
 ```
 
 #### Integrante
@@ -406,7 +406,7 @@ Endpoint:
 Para traer todos los registros:
 
 ```text
-/api/integrantes/?page_size=all
+/api/integrantes/?page_size=-1
 ```
 
 #### Clasificacion
@@ -444,7 +444,7 @@ Endpoint:
 Para traer todos los registros:
 
 ```text
-/api/clasificaciones/?page_size=all
+/api/clasificaciones/?page_size=-1
 ```
 
 #### HistorialTorneos
@@ -483,7 +483,7 @@ Endpoint:
 Para traer todos los registros:
 
 ```text
-/api/historialtorneos/?page_size=all
+/api/historialtorneos/?page_size=-1
 ```
 
 ## gestion_encuentro
@@ -548,7 +548,7 @@ Endpoint:
 Para traer todos los encuentros sin paginacion:
 
 ```text
-/gestion_encuentro/encuentros/?page_size=all
+/gestion_encuentro/encuentros/?page_size=-1
 ```
 
 #### grupo
@@ -574,7 +574,7 @@ Endpoint:
 Para traer todos los grupos sin paginacion:
 
 ```text
-/gestion_encuentro/grupos/?page_size=all
+/gestion_encuentro/grupos/?page_size=-1
 ```
 
 #### grupo_encuentro
@@ -606,7 +606,7 @@ Endpoint:
 Para traer todos los registros de grupo-encuentro sin paginacion:
 
 ```text
-/gestion_encuentro/grupo_encuentros/?page_size=all
+/gestion_encuentro/grupo_encuentros/?page_size=-1
 ```
 
 #### grupo_equipo
@@ -641,7 +641,7 @@ Endpoint:
 Para traer todos los registros de grupo-equipo sin paginacion:
 
 ```text
-/gestion_encuentro/grupo_equipos/?page_size=all
+/gestion_encuentro/grupo_equipos/?page_size=-1
 ```
 
 ## schema_tutoriales
@@ -688,7 +688,7 @@ Endpoint:
 Para traer todos los registros:
 
 ```text
-/api/tutoriales/?page_size=all
+/api/tutoriales/?page_size=-1
 ```
 
 ### Autenticacion
@@ -743,7 +743,7 @@ Endpoint:
 Para traer todos los registros:
 
 ```text
-/api/documento/?page_size=all
+/api/documento/?page_size=-1
 ```
 
 #### Usuario
@@ -780,7 +780,7 @@ Endpoint:
 Para traer todos los registros:
 
 ```text
-/api/usuario/?page_size=all
+/api/usuario/?page_size=-1
 ```
 
 #### Contrasena
@@ -812,7 +812,7 @@ Endpoint:
 Para traer todos los registros:
 
 ```text
-/api/contrasena/?page_size=all
+/api/contrasena/?page_size=-1
 ```
 
 #### HistorialAcceso
@@ -848,7 +848,7 @@ Endpoint:
 Para traer todos los registros:
 
 ```text
-/api/historial_acceso/?page_size=all
+/api/historial_acceso/?page_size=-1
 ```
 
 ## Notas tecnicas
